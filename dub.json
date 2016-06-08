@@ -1,0 +1,28 @@
+{
+    "name": "d-wing",
+    "authors": [
+        "rcorre"
+    ],
+    "dependencies": {
+        "allegro": "~>4.0.0",
+        "entitysysd": "~>2.4.1",
+        "dtiled": "~>0.3.0",
+        "gfm:math": "~>5.0.0"
+    },
+    "description": "A 2D side-scrolling shooter",
+    "copyright": "Copyright © 2016, rcorre",
+    "license": "MIT",
+    "targetPath": "bin/",
+    "workingDirectory": "bin/",
+    "buildRequirements": [ "silenceDeprecations" ],
+    "libs": [
+      "allegro",
+      "allegro_acodec",
+      "allegro_audio",
+      "allegro_color",
+      "allegro_font",
+      "allegro_image",
+      "allegro_main",
+      "allegro_ttf"
+    ]
+}
