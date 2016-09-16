@@ -13,7 +13,7 @@ private auto spriteRect(int x, int y, int w, int h) {
 
 struct SpriteRect {
     static immutable player = spriteRect(0 * 16, 0 * 16, 2 * 16, 1 * 16);
-    static immutable enemy  = spriteRect(2 * 16, 4 * 16, 2 * 16, 2 * 16);
+    static immutable enemy  = spriteRect(2 * 16, 0 * 16, 2 * 16, 2 * 16);
 
     static immutable chainShot = spriteRect(0, 16, 16, 2);
     static immutable spreadShot = spriteRect(0, 18, 7, 2);

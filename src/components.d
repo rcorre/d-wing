@@ -83,3 +83,7 @@ struct DestroyAfter {
 struct Loadout {
     Weapon[2] weapons;
 }
+
+struct Collider {
+    vec2i size;
+}

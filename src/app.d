@@ -1,5 +1,6 @@
 import std.datetime;
 
+import gfm.math;
 import entitysysd;
 import allegro5.allegro;
 import allegro5.allegro_image;
@@ -38,6 +39,11 @@ void main() {
     /* --- Initialize EntitySysD --- */
     auto game = new EntitySysD;
     auto player = game.entities.createPlayer();
+
+    game.entities.createEnemy(vec2f(600, 200));
+    game.entities.createEnemy(vec2f(700, 200));
+    game.entities.createEnemy(vec2f(700, 300));
+    game.entities.createEnemy(vec2f(600, 300));
 
     game.systems.register(new MotionSystem);
     game.systems.register(new InputSystem(player));

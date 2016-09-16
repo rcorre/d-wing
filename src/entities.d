@@ -32,3 +32,15 @@ auto createPlayer(EntityManager em) {
 
     return ent;
 }
+
+auto createEnemy(EntityManager em, vec2f pos) {
+    auto ent = em.create();
+
+    ent.register!Transform(pos, vec2f(1, 1), PI);
+    ent.register!Velocity();
+    ent.register!Sprite(SpriteRect.enemy);
+    ent.register!Collider(vec2i(SpriteRect.enemy.width,
+                                SpriteRect.enemy.height));
+
+    return ent;
+}
